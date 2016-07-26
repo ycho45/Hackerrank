@@ -17,9 +17,7 @@ public class Solution {
         for(int i = 0; i < 4; i++){
             for(int j = 0; j < 4; j++){
                 sum = arrSum(i, j, arr);
-                if(sum > max){ 
-                    max = sum;
-                }
+                if(sum > max) max = sum;
             }
         }
         return max;   
