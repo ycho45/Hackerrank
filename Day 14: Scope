@@ -1,0 +1,18 @@
+    Difference(int[] a){
+        elments = a;
+    }
+     void computeDifference(){
+        int min = 0;
+        int max = 0;
+        boolean flag = false;
+        for(int i = 0; i < elements.length; i++){
+            if((Math.abs(elements[i]) < Math.abs(min)) || flag == false){
+                min = elements[i];
+                flag = true;
+            }
+            if(Math.abs(elements[i]) > Math.abs(max)){
+                max = elements[i];
+            }
+        }
+        maximumDifference = max - min;
+    }
