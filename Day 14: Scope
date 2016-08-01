@@ -1,5 +1,5 @@
     Difference(int[] a){
-        elments = a;
+        elements = a;
     }
      void computeDifference(){
         int min = 0;
